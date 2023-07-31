@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root,
+.root,
+#root,
+#docs-root {
+	--primary: #2b4cde;
+	--primary-dark: #152c5b;
+	--pink: #ff498b;
+	--yellow: #ffcc47;
+	--gray: #e5e5e5;
+	--dark-gray: #b0b0b0;
+}
