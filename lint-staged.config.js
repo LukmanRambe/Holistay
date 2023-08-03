@@ -1,5 +1,5 @@
 export default {
-	"*.js": ["eslint --fix", "eslint"],
-	"*.jsx": ["eslint --fix", "eslint"],
+	"*.js": ["eslint --fix", "eslint", "react-scripts test"],
+	"*.jsx": ["eslint --fix", "eslint", "react-scripts test"],
 	"*.json": ["prettier --write"],
 };
