@@ -3,11 +3,13 @@ import { Link } from "react-router-dom";
 
 const Button = (props) => {
 	const className = [props.className];
-	if (props.isPrimary) className.push("btn-primary");
+	if (props.isPrimary)
+		className.push("-bg--primary text-white xl:text-lg rounded-md");
 	if (props.isLarge) className.push("btn-lg");
 	if (props.isSmall) className.push("btn-sm");
 	if (props.isBlock) className.push("btn-block");
-	if (props.hasShadow) className.push("btn-shadow");
+	if (props.hasShadow)
+		className.push("shadow-[0_8px_15px_0_rgba(43,76,222,0.3)]");
 
 	const handleClick = () => {
 		if (props.onClick) props.onClick();
@@ -20,7 +22,7 @@ const Button = (props) => {
 			<span className={className.join(" ")}>
 				{props.isLoading ? (
 					<>
-						<span className="spinner-border spinner-border-sm mx-5"></span>
+						<span className="mx-5 spinner-border spinner-border-sm"></span>
 						<span className="sr-only">Loading...</span>
 					</>
 				) : (
