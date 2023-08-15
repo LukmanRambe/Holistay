@@ -6,17 +6,17 @@ import ImageHero from "assets/images/img-hero.jpg";
 import Button from "components/Artifacts/Button";
 import formatNumber from "utils/formatNumber";
 
-const Hero = ({ data }) => {
+const Hero = ({ refMostPicked, data }) => {
 	const showMostPicked = () => {
 		window.scrollTo({
-			top: refMostPicked.current.offsetTop - 30,
+			top: refMostPicked.current.offsetTop + 70,
 			behavior: "smooth",
 		});
 	};
 
 	return (
 		<section className="w-full px-6 xl:px-36 pt-[50px] md:pt-[70px] lg:px-10">
-			<div className="flex items-start justify-between">
+			<section className="flex items-start justify-between">
 				<article className="w-[500px] flex flex-col justify-between">
 					<article className="mb-[70px] lg:mb-24">
 						<h1 className="mb-5 text-[38px] xl:text-[42px] leading-[63px] font-bold -text--primary-dark">
@@ -95,7 +95,7 @@ const Hero = ({ data }) => {
 						/>
 					</div>
 				</article>
-			</div>
+			</section>
 		</section>
 	);
 };

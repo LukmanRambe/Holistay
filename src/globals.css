@@ -16,3 +16,9 @@
 	--gray: #6f6f6f;
 	--dark-gray: #585858;
 }
+
+@layer components {
+	.card {
+		@apply relative w-full h-full overflow-hidden rounded-[15px] first-of-type:row-span-2;
+	}
+}
