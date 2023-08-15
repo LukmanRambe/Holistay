@@ -1,11 +1,14 @@
-import Header from "./components/Main/Header.jsx";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import LandingPage from "./pages/index.jsx";
 
 const App = () => {
 	return (
-		<Header>
-			<LandingPage />
-		</Header>
+		<Router>
+			<Routes>
+				<Route path="/" element={<LandingPage />} />
+			</Routes>
+		</Router>
 	);
 };
 

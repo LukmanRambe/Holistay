@@ -21,5 +21,5 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Run Automated Test
         run: |
-          npm install
+          npm install --legacy-peer-deps
           npm run test
