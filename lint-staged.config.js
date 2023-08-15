@@ -1,5 +1,5 @@
-export default {
-	"*.js": ["eslint --fix", "eslint", "react-scripts test"],
-	"*.jsx": ["eslint --fix", "eslint", "react-scripts test"],
+module.exports = {
+	"*.{js,jsx}": ["eslint", "eslint"],
+	"**/*.test.js": ["eslint", "react-scripts test"],
 	"*.json": ["prettier --write"],
 };
