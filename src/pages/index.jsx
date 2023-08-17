@@ -1,5 +1,6 @@
 import { useRef } from "react";
 
+import Categories from "components/LandingPage/Categories";
 import Hero from "components/LandingPage/Hero";
 import MostPicked from "components/LandingPage/MostPicked";
 import { useLocation } from "react-router-dom";
@@ -19,6 +20,7 @@ const LandingPage = () => {
 				refMostPicked={refMostPicked}
 				mostPicked={LANDING_PAGE.mostPicked}
 			/>
+			<Categories categories={LANDING_PAGE.categories} />
 		</>
 	);
 };
