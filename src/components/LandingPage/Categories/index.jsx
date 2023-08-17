@@ -5,7 +5,7 @@ const Categories = ({ categories }) => {
 		<section className="flex flex-col gap-y-[70px] w-full px-6 xl:px-36 pt-[50px] md:pt-[100px] lg:px-10">
 			{categories.map((category, categoryIndex) => (
 				<section key={`category-${categoryIndex}`}>
-					<h4 className="mb-4 text-[24px] leading-normal font-medium -text--primary-dark">
+					<h4 className="mb-5 text-[24px] leading-normal font-medium -text--primary-dark">
 						{category.name}
 					</h4>
 
