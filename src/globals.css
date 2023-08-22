@@ -13,12 +13,18 @@
 	--primary-dark: #152c5b;
 	--pink: #ff498b;
 	--yellow: #ffcc47;
-	--gray: #6f6f6f;
-	--dark-gray: #585858;
+	--light-gray: #e9ecef;
+	--gray: #b0b0b0;
 }
 
 @layer components {
 	.card {
 		@apply relative w-full h-full overflow-hidden rounded-[15px] first-of-type:row-span-2;
 	}
+}
+
+.star {
+	position: absolute;
+	display: inline-flex;
+	mask: url(./assets/icons/icon-star.svg) no-repeat center left;
 }
