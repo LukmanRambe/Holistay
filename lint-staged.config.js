@@ -1,5 +1,5 @@
 module.exports = {
-	"*.{js,jsx}": ["eslint", "eslint"],
-	"**/*.test.js": ["eslint", "react-scripts test"],
+	"*.{js,jsx}": ["eslint"],
+	"**/*.test.js": ["eslint"],
 	"*.json": ["prettier --write"],
 };

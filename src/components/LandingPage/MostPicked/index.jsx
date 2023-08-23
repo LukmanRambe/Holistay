@@ -8,7 +8,7 @@ const MostPicked = ({ refMostPicked, mostPicked }) => {
 	return (
 		<section
 			ref={refMostPicked}
-			className="w-full px-6 xl:px-36 pt-[50px] md:pt-[100px] lg:px-10 mb-[50rem]">
+			className="w-full px-6 xl:px-36 pt-[50px] md:pt-[100px] lg:px-10">
 			<h4 className="mb-4 text-[24px] leading-normal font-medium -text--primary-dark">
 				Most Picked
 			</h4>
