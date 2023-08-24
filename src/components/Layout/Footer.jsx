@@ -3,7 +3,7 @@ import IconText from "components/Artifacts/IconText";
 
 const Footer = () => {
 	return (
-		<footer className="flex items-center flex-col justify-between w-full p-12 px-6 bg-white border-b-[1.5px] lg:px-10 xl:px-36 -border-t-[#878787] gap-[60px]">
+		<footer className="flex items-center flex-col justify-between w-full p-12 px-6 bg-white border-t-[1.5px] lg:px-10 xl:px-36 gap-[60px]">
 			<section className="flex flex-col w-full lg:flex-row">
 				<div className="w-full sm:w-2/5 place-self-start">
 					<IconText />

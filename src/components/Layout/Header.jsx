@@ -15,7 +15,7 @@ const Header = (props) => {
 	};
 
 	return (
-		<header className="flex items-center justify-between w-full p-6 px-6 bg-white border-b-[1.5px] lg:px-10 xl:px-36 -border-b-[#878787]">
+		<header className="flex items-center justify-between w-full p-6 px-6 bg-white border-b-[1.5px] lg:px-10 xl:px-36">
 			<Fade>
 				<div className="container">
 					<IconText />
