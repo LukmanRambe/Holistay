@@ -46,12 +46,11 @@ const InputDate = ({ value, placeholder, name, onChange, outerClassName }) => {
 	return (
 		<div
 			ref={refDatePicker}
-			className={[
-				"date-picker-wrapper flex group mb-3 p-6",
-				outerClassName,
-			].join(" ")}>
-			<div className="bg-white">
-				<div>
+			className={["date-picker-wrapper flex group w-full", outerClassName].join(
+				" "
+			)}>
+			<div className="w-full bg-white">
+				<div onClick={() => setIsShown(!isShown)}>
 					<span className="group-hover:cursor-pointer border-0 p-0 rounded-[4px] w-[45px] h-[45px] -bg--primary-dark absolute z-50 flex justify-center items-center">
 						<img src={IconCalendar} alt="icon calendar" />
 					</span>
@@ -67,7 +66,7 @@ const InputDate = ({ value, placeholder, name, onChange, outerClassName }) => {
 				/>
 
 				{isShown && (
-					<div className="date-picker-wrapper p-1 bg-white shadow-[0_0_20px_rgba(0,0,0,0.1)] absolute rounded-[4px] top-[45px] z-[5]">
+					<div className="date-picker-wrapper p-1 bg-white shadow-[0_0_20px_rgba(0,0,0,0.1)] absolute rounded-[4px] top-[45px] z-[100]">
 						<DateRange
 							editableDateInputs={true}
 							onChange={handleChange}

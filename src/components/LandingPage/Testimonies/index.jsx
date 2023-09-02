@@ -53,9 +53,10 @@ const Testimonies = ({ testimonial }) => {
 						</div>
 
 						<Button
-							className="min-h-[50px] min-w-[240px] w-full md:w-fit mt-10 flex items-center justify-center"
+							className="py-3 mt-10 text-center"
 							hasShadow
 							isPrimary
+							isBlock
 							type="link"
 							href={`/testimonial/${testimonial._id}`}>
 							Read Their Story

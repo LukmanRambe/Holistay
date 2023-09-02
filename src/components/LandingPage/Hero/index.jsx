@@ -31,7 +31,7 @@ const Hero = ({ refMostPicked, data }) => {
 							</p>
 
 							<Button
-								className="min-h-[50px] w-full sm:max-w-[240px] sm:min-w-[240px]"
+								className="md:max-w-[210px]"
 								hasShadow
 								isPrimary
 								onClick={showMostPicked}>

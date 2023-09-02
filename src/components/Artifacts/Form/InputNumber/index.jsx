@@ -43,8 +43,8 @@ const InputNumber = ({
 		});
 
 	return (
-		<div className={["mb-3", outerClassName].join(" ")}>
-			<div className="flex items-center bg-white">
+		<div className={["mb-3 w-full", outerClassName].join(" ")}>
+			<div className="flex items-center w-full bg-white">
 				<div className="input-group-prepend">
 					<span
 						className="border-0 hover:cursor-pointer text-white p-0 rounded-[4px] text-2xl w-[45px] h-[45px] select-none -bg--red flex justify-center items-center"
@@ -60,7 +60,6 @@ const InputNumber = ({
 					min={min}
 					max={max}
 					name={name}
-					pattern="[0-9]*"
 					placeholder={placeholder || "0"}
 					value={
 						value !== ""
@@ -70,7 +69,7 @@ const InputNumber = ({
 							: ""
 					}
 					onChange={handleChange}
-					className="input-number min-h-[45px] border-0 rounded-none shadow-none outline-none -bg--gray-100 py-[.575rem] px-[1rem] text-center"
+					className="input-number min-h-[45px] border-0 rounded-none shadow-none outline-none -bg--gray-100 py-[.575rem] px-[1rem] text-center w-full"
 				/>
 
 				<div className="input-group-prepend">

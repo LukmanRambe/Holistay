@@ -36,7 +36,7 @@ const MostPicked = ({ refMostPicked, mostPicked }) => {
 
 							<Button
 								type="link"
-								className="absolute bottom-0 w-full h-full bg-gradient-to-b from-black/0 to-black/50"
+								className="absolute bottom-0 max-h-full md:w-full bg-gradient-to-b from-black/0 to-black/50"
 								href={`/properties/${house._id}`}>
 								<span className="absolute bottom-0 p-6 text-white">
 									<h5 className="text-lg mb-[2px]">{house.name}</h5>
