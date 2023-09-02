@@ -2,7 +2,7 @@ import { Fade } from "react-reveal";
 
 const FeaturedImages = ({ data }) => {
 	return (
-		<section className="w-full px-6 xl:px-36 pt-4 lg:pt-[50px] lg:px-10">
+		<section className="w-full pt-4 lg:pt-[50px]">
 			<div className="grid md:grid-cols-[60%_minmax(40%,_1fr)] lg:grid-rows-[repeat(2,_245px)] gap-[10px]">
 				{data?.imageUrls?.map((item, index) => (
 					<Fade key={`featured-image-${index}`} bottom delay={250 * index}>

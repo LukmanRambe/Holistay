@@ -5,7 +5,7 @@ import { Fade } from "react-reveal";
 
 const Testimonies = ({ testimonial }) => {
 	return (
-		<section className="w-full h-full pb-28 px-6 xl:px-36 pt-[50px] md:pt-[100px] lg:px-10">
+		<section className="w-full h-full pb-28 pt-[50px] md:pt-[100px]">
 			<div className="w-full h-full flex justfiy-center flex-col sm:flex-row sm:gap-[80px] md:gap-[60px] lg:gap-[75px]">
 				<Fade bottom>
 					<article className="hidden sm:block relative w-full sm:w-1/3 md:w-1/2 lg:w-2/5 min-h-[470px] md:min-h-[500px] lg:min-h-[590px] lg:min-w-[400px]">

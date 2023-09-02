@@ -1,13 +1,12 @@
 import { useRef } from "react";
 
+import Testimonies from "components/Artifacts/Testimonies";
 import Categories from "components/LandingPage/Categories";
 import Hero from "components/LandingPage/Hero";
 import MostPicked from "components/LandingPage/MostPicked";
-import Testimonies from "components/LandingPage/Testimonies";
-import Footer from "components/Layout/Footer";
+import Layout from "components/Layout";
 import { useLocation } from "react-router-dom";
 
-import Header from "../components/Layout/Header";
 import LANDING_PAGE from "../json/landingPage.json";
 
 const LandingPage = () => {
@@ -15,8 +14,7 @@ const LandingPage = () => {
 	const refMostPicked = useRef();
 
 	return (
-		<>
-			<Header location={location} />
+		<Layout location={location}>
 			<Hero refMostPicked={refMostPicked} data={LANDING_PAGE.hero} />
 			<MostPicked
 				refMostPicked={refMostPicked}
@@ -24,8 +22,7 @@ const LandingPage = () => {
 			/>
 			<Categories categories={LANDING_PAGE.categories} />
 			<Testimonies testimonial={LANDING_PAGE.testimonial} />
-			<Footer />
-		</>
+		</Layout>
 	);
 };
 

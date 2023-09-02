@@ -3,7 +3,7 @@ import { Fade } from "react-reveal";
 
 const PropertyTitle = ({ data, breadcrumb }) => {
 	return (
-		<section className="gap-y-[70px] w-full px-6 xl:px-36 pt-[50px] md:pt-[50px] lg:px-10">
+		<section className="gap-y-[70px] w-full pt-[50px] md:pt-[50px]">
 			<Fade bottom>
 				<div className="flex flex-col lg:flex-row justify-between gap-16 lg:gap-20 lg:items-center after:contents-[' '] after:flex-[1] after:xl:flex[0]">
 					<div className="flex-1">
