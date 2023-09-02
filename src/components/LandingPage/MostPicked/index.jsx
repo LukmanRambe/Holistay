@@ -7,9 +7,7 @@ const MostPicked = ({ refMostPicked, mostPicked }) => {
 	const houseId = useId();
 
 	return (
-		<section
-			ref={refMostPicked}
-			className="w-full px-6 xl:px-36 pt-[50px] md:pt-[100px] lg:px-10">
+		<section ref={refMostPicked} className="w-full pt-[50px] md:pt-[100px]">
 			<h4 className="mb-4 text-[24px] leading-normal font-medium -text--primary-dark">
 				Most Picked
 			</h4>
@@ -36,7 +34,7 @@ const MostPicked = ({ refMostPicked, mostPicked }) => {
 
 							<Button
 								type="link"
-								className="absolute bottom-0 w-full h-full bg-gradient-to-b from-black/0 to-black/50"
+								className="absolute bottom-0 max-h-full md:w-full bg-gradient-to-b from-black/0 to-black/50"
 								href={`/properties/${house._id}`}>
 								<span className="absolute bottom-0 p-6 text-white">
 									<h5 className="text-lg mb-[2px]">{house.name}</h5>

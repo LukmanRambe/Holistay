@@ -5,11 +5,9 @@ const Button = (props) => {
 	const className = [props.className];
 	if (props.isPrimary)
 		className.push("-bg--primary text-white xl:text-lg rounded-md");
-	if (props.isLarge) className.push("btn-lg");
-	if (props.isSmall) className.push("btn-sm");
-	if (props.isBlock) className.push("btn-block");
 	if (props.hasShadow)
 		className.push("shadow-[0_8px_15px_0_rgba(43,76,222,0.3)]");
+	if (props.isBlock) className.push("block");
 
 	const handleClick = () => {
 		if (props.onClick) props.onClick();
@@ -37,7 +35,10 @@ const Button = (props) => {
 			return (
 				<a
 					href={props.href}
-					className={className.join(" ")}
+					className={[
+						"w-full h-full max-h-[50px] min-w-[210px] md:w-fit",
+						...className,
+					].join(" ")}
 					target={props.target === "_blank" ? "_blank" : undefined}
 					rel={props.target === "_blank" ? "noopener noreferrer" : undefined}>
 					{props.children}
@@ -49,7 +50,10 @@ const Button = (props) => {
 			return (
 				<Link
 					to={props.href}
-					className={className.join(" ")}
+					className={[
+						"w-full h-full max-h-[50px] min-w-[210px] md:w-fit",
+						...className,
+					].join(" ")}
 					onClick={handleClick}>
 					{props.children}
 				</Link>
@@ -58,7 +62,9 @@ const Button = (props) => {
 	}
 
 	return (
-		<button className={className.join(" ")} onClick={handleClick}>
+		<button
+			className={["w-full h-full min-h-[50px]", ...className].join(" ")}
+			onClick={handleClick}>
 			{props.children}
 		</button>
 	);
@@ -71,11 +77,9 @@ Button.propTypes = {
 	target: propTypes.string,
 	className: propTypes.string,
 	isPrimary: propTypes.bool,
-	isLarge: propTypes.bool,
-	isSmall: propTypes.bool,
+	isBlock: propTypes.bool,
 	isDisabled: propTypes.bool,
 	isLoading: propTypes.bool,
-	isBlock: propTypes.bool,
 	isExternal: propTypes.bool,
 	hasShadow: propTypes.bool,
 };

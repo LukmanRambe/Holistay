@@ -16,7 +16,7 @@ const Hero = ({ refMostPicked, data }) => {
 	};
 
 	return (
-		<section className="w-full px-6 xl:px-36 pt-[50px] md:pt-[70px] lg:px-10">
+		<section className="w-full pt-[50px] md:pt-[70px]">
 			<section className="flex items-start justify-between">
 				<Fade bottom>
 					<article className="sm:w-[500px] w-full flex flex-col sm:justify-between">
@@ -31,7 +31,7 @@ const Hero = ({ refMostPicked, data }) => {
 							</p>
 
 							<Button
-								className="min-h-[50px] w-full sm:max-w-[240px] sm:min-w-[240px]"
+								className="md:max-w-[210px]"
 								hasShadow
 								isPrimary
 								onClick={showMostPicked}>

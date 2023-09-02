@@ -3,7 +3,7 @@ import { Fade } from "react-reveal";
 
 const Categories = ({ categories }) => {
 	return (
-		<section className="flex flex-col gap-y-[70px] w-full px-6 xl:px-36 pt-[50px] md:pt-[100px] lg:px-10">
+		<section className="flex flex-col gap-y-[70px] w-full pt-[50px] md:pt-[100px]">
 			{categories.map((category, categoryIndex) => (
 				<section key={`category-${categoryIndex}`}>
 					<h4 className="mb-5 text-[24px] leading-normal font-medium -text--primary-dark">
