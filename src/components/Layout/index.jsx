@@ -1,7 +1,14 @@
+import { useEffect } from "react";
+
 import Footer from "./Footer";
 import Header from "./Header";
 
-const Layout = ({ location, children }) => {
+const Layout = ({ location, children, pageTitle }) => {
+	useEffect(() => {
+		document.title = pageTitle;
+		window.scrollTo(0, 0);
+	}, []);
+
 	return (
 		<>
 			<Header location={location} />
