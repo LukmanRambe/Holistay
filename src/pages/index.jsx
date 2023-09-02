@@ -14,7 +14,7 @@ const LandingPage = () => {
 	const refMostPicked = useRef();
 
 	return (
-		<Layout location={location}>
+		<Layout location={location} pageTitle="Holistay">
 			<Hero refMostPicked={refMostPicked} data={LANDING_PAGE.hero} />
 			<MostPicked
 				refMostPicked={refMostPicked}

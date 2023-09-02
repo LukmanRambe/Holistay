@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-
 import Testimonies from "components/Artifacts/Testimonies";
 import Categories from "components/LandingPage/Categories";
 import Layout from "components/Layout";
@@ -19,13 +17,8 @@ const DetailsPage = () => {
 		{ pageTitle: ITEM_DETAILS?.name, pageHref: "" },
 	];
 
-	useEffect(() => {
-		document.title = `Staycation | ${ITEM_DETAILS?.name}`;
-		window.scrollTo(0, 0);
-	}, []);
-
 	return (
-		<Layout location={location}>
+		<Layout location={location} pageTitle={`Holistay | ${ITEM_DETAILS?.name}`}>
 			<PropertyTitle breadcrumb={breadcrumb} data={ITEM_DETAILS} />
 			<FeaturedImages data={ITEM_DETAILS} />
 			<main className="w-full flex flex-col lg:flex-row gap-10 md:gap-[53px] pt-[50px] md:pt-[50px]">
