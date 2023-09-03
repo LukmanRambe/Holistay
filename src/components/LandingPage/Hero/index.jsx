@@ -10,7 +10,7 @@ import formatNumber from "utils/formatNumber";
 const Hero = ({ refMostPicked, data }) => {
 	const showMostPicked = () => {
 		window.scrollTo({
-			top: refMostPicked.current.offsetTop + 70,
+			top: refMostPicked.current.offsetTop + 40,
 			behavior: "smooth",
 		});
 	};
