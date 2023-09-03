@@ -67,7 +67,7 @@ const BookingForm = ({ itemDetails }) => {
 
 	return (
 		<Fade bottom>
-			<section className="w-full lg:w-[40%] card overflow-visible border py-[50px] xl:py-[60px] px-5 md:px-10 xl:px-14">
+			<section className="w-full lg:w-[40%] card overflow-visible border py-[50px] xl:py-[60px] px-5 md:px-10 xl:px-14 z-50">
 				<h4 className="mb-[14px] font-medium -text--primary-dark text-xl">
 					Start Booking
 				</h4>

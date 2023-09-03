@@ -31,3 +31,47 @@
 	display: inline-flex;
 	mask: url(./assets/icons/icon-star.svg) no-repeat center left;
 }
+
+@media only screen and (min-width: 320px) {
+	.rdrCalendarWrapper {
+		width: 100%;
+	}
+
+	.rdrMonthAndYearWrapper {
+		height: 100%;
+	}
+
+	.rdrMonthAndYearPickers {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.rdrMonthAndYearPickers span,
+	.rdrMonthAndYearPickers span select {
+		width: 100%;
+	}
+
+	.rdrMonths .rdrMonth {
+		width: 100%;
+		margin-top: 0.3rem;
+	}
+
+	.rdrDayToday .rdrDayNumber span::after {
+		width: 12px !important;
+	}
+}
+
+@media only screen and (min-width: 425px) {
+	.rdrMonthAndYearPickers {
+		flex-direction: row;
+	}
+
+	.rdrMonthAndYearPickers span,
+	.rdrMonthAndYearPickers span select {
+		width: fit-content;
+	}
+
+	.rdrDayToday .rdrDayNumber span::after {
+		width: 18px !important;
+	}
+}

@@ -49,9 +49,9 @@ const InputDate = ({ value, placeholder, name, onChange, outerClassName }) => {
 			className={["date-picker-wrapper flex group w-full", outerClassName].join(
 				" "
 			)}>
-			<div className="w-full bg-white">
+			<div className="w-full">
 				<div onClick={() => setIsShown(!isShown)}>
-					<span className="group-hover:cursor-pointer border-0 p-0 rounded-[4px] w-[45px] h-[45px] -bg--primary-dark absolute z-50 flex justify-center items-center">
+					<span className="group-hover:cursor-pointer border-0 p-0 rounded-[4px] w-[45px] h-[45px] -bg--primary-dark absolute flex justify-center items-center">
 						<img src={IconCalendar} alt="icon calendar" />
 					</span>
 				</div>
@@ -59,14 +59,14 @@ const InputDate = ({ value, placeholder, name, onChange, outerClassName }) => {
 				<input
 					type="text"
 					readOnly
-					className="input-date group-hover:cursor-pointer border-0 outline-0 shadow-none -bg--gray-100 py-[.575rem] px-[45px] text-center justify-center w-full h-[45px] rounded-[4px]"
+					className="input-date pr-2 group-hover:cursor-pointer border-0 outline-0 shadow-none -bg--gray-100 py-[.575rem] px-[45px] text-center justify-center w-full h-[45px] rounded-[4px]"
 					value={displayDate}
 					placeholder={placeholder}
 					onClick={() => setIsShown(!isShown)}
 				/>
 
 				{isShown && (
-					<div className="date-picker-wrapper absolute shadow-[0_0_20px_rgba(0,0,0,0.1)] rounded-[4px] z-50 p-2 bg-white">
+					<div className="date-picker-wrapper absolute shadow-[0_0_20px_rgba(0,0,0,0.1)] w-[calc(100%-20px)] sm:w-[calc(100%-40px)] md:max-w-[500px] lg:max-w-[360px] rounded-[4px] z-50 p-2 bg-white">
 						<DateRange
 							editableDateInputs={true}
 							onChange={handleChange}
