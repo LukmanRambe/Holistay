@@ -66,7 +66,7 @@ const InputDate = ({ value, placeholder, name, onChange, outerClassName }) => {
 				/>
 
 				{isShown && (
-					<div className="date-picker-wrapper p-1 bg-white shadow-[0_0_20px_rgba(0,0,0,0.1)] absolute rounded-[4px] top-[45px] z-[100]">
+					<div className="date-picker-wrapper absolute shadow-[0_0_20px_rgba(0,0,0,0.1)] rounded-[4px] z-50 p-2 bg-white">
 						<DateRange
 							editableDateInputs={true}
 							onChange={handleChange}

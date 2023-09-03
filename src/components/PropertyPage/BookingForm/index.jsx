@@ -66,8 +66,8 @@ const BookingForm = ({ itemDetails }) => {
 	}, [inputValue.data.date]);
 
 	return (
-		<section className="w-full lg:w-[40%] card overflow-visible border py-[50px] xl:py-[60px] px-5 md:px-10 xl:px-14">
-			<Fade bottom>
+		<Fade bottom>
+			<section className="w-full lg:w-[40%] card overflow-visible border py-[50px] xl:py-[60px] px-5 md:px-10 xl:px-14">
 				<h4 className="mb-[14px] font-medium -text--primary-dark text-xl">
 					Start Booking
 				</h4>
@@ -119,8 +119,8 @@ const BookingForm = ({ itemDetails }) => {
 				<Button className="w-full" hasShadow isPrimary>
 					Continue To Book
 				</Button>
-			</Fade>
-		</section>
+			</section>
+		</Fade>
 	);
 };
 
